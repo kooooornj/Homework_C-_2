@@ -17,7 +17,33 @@ Console.WriteLine("Второе цифра данного числа = " + two);
 FindSecondDigit();
 */ 
 
-/* Zadacha 13 */
+ /*Zadacha 13 
+ First way 
+
+void FindThirdDigit()
+{
+    
+    int rand = new Random().Next();
+    Console.WriteLine("Заданное число = " + rand);
+    if (rand < 100)
+    {
+        Console.WriteLine("У числа нет третьей цифры");
+    }
+    else
+    {    
+        int third = 0;
+        while (rand > 99)
+     {
+         third = rand % 10;
+         rand = rand / 10;
+     
+     }
+     Console.WriteLine("Третья цифра данного числа = " + third);    
+    }
+}
+FindThirdDigit(); */
+/*
+Second way
 
 void FindThirdDigit()
 {
@@ -30,16 +56,8 @@ void FindThirdDigit()
     }
     else
     {
-        Console.WriteLine(rand.ToString()[2]);
-       /* int third = 0;
-        while (rand < 100)
-     {
-         third = rand % 10;
-         rand = rand / 10;
-         Console.WriteLine("Заданное число = " + rand); 
-     }
-     Console.WriteLine("Второе цифра данного числа = " + third); */   
+        Console.WriteLine("Третья цифра данного числа = " + rand.ToString()[2]);  
     }
 }
-FindThirdDigit();
+FindThirdDigit(); */
 
